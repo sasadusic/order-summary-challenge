@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ma+Shan+Zheng&family=Neucha&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+     /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    
+     /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -10vh;
+    background-color: var(--very-pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    padding: 24px 0;
+}
+
+.card{
+    width: min(450px, 90vw);
+    background: white;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-image{
+    width: 100%;
+}
+.container{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.header{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+.phar{
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+.plan-container{
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.plan-container a{
+    color: var(--bright-blue);
+    font-size: 16px;
+    font-weight: 700;
+}
+.plan-container a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+.plan-container strong{
+    color: var(--dark-blue);
+}
+.plan-description{
+    line-height: 20px;
+    margin-right: 75px;
+}
+.btn{
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: transparent;
+}
+.proceed-btn{
+    background: var(--bright-blue);
+    padding: 1rem 0;
+    color: #fff;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    margin-bottom: 24px;
+}
+.proceed-btn:hover{
+    opacity: .8;
+}
+.cancel-btn{
+    color: var(--desaturated-blue);
+}
+.cancel-btn:hover{
+    color: #000;
+}
+@media (widht < 576px) {
+    body{
+        align-items: start;
+    }
+}
